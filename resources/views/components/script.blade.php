@@ -1,0 +1,20 @@
+  <!-- scripts -->
+  <script src="{{ asset('assets/js/jquery-3.6.0.min.js') }}"></script>
+  <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/js/aos.js') }}"></script>
+  <script src="{{ asset('assets/js/menu/menu.js') }}"></script>
+  <script src="{{ asset('assets/js/gsap.min.js') }}"></script>
+  <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+  <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/js/countdown.js') }}"></script>
+  <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+  <script src="{{ asset('assets/js/SplitText.min.js') }}"></script>
+  <script src="{{ asset('assets/js/ScrollTrigger.min.js') }}"></script>
+  <script src="{{ asset('assets/js/ScrollSmoother.min.js') }}"></script>
+  <script src="{{ asset('assets/js/skill-bar.js') }}"></script>
+  <script src="{{ asset('assets/js/infinite-slider.js') }}"></script>
+  <script src="{{ asset('assets/js/image-resizing.js') }}"></script>
+  <!-- <script src="{{ asset('assets/js/scrollsmooth.js') }}"></script> -->
+  <script src="{{ asset('assets/js/faq.js') }}"></script>
+  <script src="{{ asset('assets/js/app.js') }}"></script>

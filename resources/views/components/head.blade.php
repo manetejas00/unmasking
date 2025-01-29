@@ -12,17 +12,17 @@
         rel="stylesheet">
     <!-- End google font  -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/custom-font.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/icomoon.css') }}">
+    <link rel="stylesheet" href="{{ url(env('ASSET_URL') . '/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/swiper-bundle.min.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url(env('ASSET_URL') .'assets/css/custom-font.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/aos.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/icomoon.css') }}">
 
     <!-- Code Editor  -->
 
-    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/main.css') }}">
+    <link rel="stylesheet" href="{{  url(env('ASSET_URL') .'assets/css/app.min.css') }}">
 </head>

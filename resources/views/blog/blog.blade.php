@@ -13,7 +13,7 @@
             <div class="col-lg-8">
                 <div class="single-post-item wow fadeInUpX" data-wow-delay="0.1s">
                     <div class="post-thumbnail">
-                        <img src="{{ asset('assets/images/blog/blog3.png') }}" alt="">
+                        <img src="{{ url(env('ASSET_URL') .'assets/images/blog/blog3.png') }}" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
@@ -30,12 +30,12 @@
                             </h3>
                         </a>
                         <p>As a first-generation immigrant, money and networks weren’t given to me. So instead of going through the front door, I tried a back door approach...</p>
-                        <a class="post-read-more" href="{{ route('singleBlog') }}">read more <img src="{{ asset('assets/images/icon/arrow-right.svg') }}" alt=""></a>
+                        <a class="post-read-more" href="{{ route('singleBlog') }}">read more <img src="{{ url(env('ASSET_URL') .'assets/images/icon/arrow-right.svg') }}" alt=""></a>
                     </div>
                 </div>
                 <div class="single-post-item wow fadeInUpX" data-wow-delay="0.2s">
                     <div class="post-thumbnail">
-                        <img src="{{ asset('assets/images/blog/blog4.png') }}" alt="">
+                        <img src="{{ url(env('ASSET_URL') .'assets/images/blog/blog4.png') }}" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-meta">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="single-post-item wow fadeInUpX" data-wow-delay="0.3s">
                     <div class="post-thumbnail">
-                        <img src="{{ asset('assets/images/blog/blog5.png') }}" alt="">
+                        <img src="{{ url(env('ASSET_URL') .'assets/images/blog/blog5.png') }}" alt="">
                     </div>
                     <div class="post-content">
                         <div class="post-meta">

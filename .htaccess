@@ -1,14 +1,23 @@
 <IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
     RewriteEngine On
 
-    # Allow direct access to assets (CSS, JS, images)
-    RewriteCond %{REQUEST_URI} ^/assets/ [OR]
-    RewriteCond %{REQUEST_URI} ^/css/ [OR]
-    RewriteCond %{REQUEST_URI} ^/js/ [OR]
-    RewriteCond %{REQUEST_URI} ^/images/
-    RewriteRule .* - [L]
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
-    # Redirect all other requests to the public folder
-    RewriteRule ^$ public/index.php [L]
-    RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>

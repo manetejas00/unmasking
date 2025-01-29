@@ -1,0 +1,8 @@
+<IfModule mod_rewite.c>
+
+    RewriteEngine On
+    RewiteRule ^$ public/index.php [L]
+    RewiteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+</IfModule>
+

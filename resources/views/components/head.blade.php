@@ -12,7 +12,7 @@
         rel="stylesheet">
     <!-- End google font  -->
 
-    <link rel="stylesheet" href="{{ url('public/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">

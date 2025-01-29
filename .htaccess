@@ -1,5 +1,14 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Allow direct access to assets (CSS, JS, images)
+    RewriteCond %{REQUEST_URI} ^/assets/ [OR]
+    RewriteCond %{REQUEST_URI} ^/css/ [OR]
+    RewriteCond %{REQUEST_URI} ^/js/ [OR]
+    RewriteCond %{REQUEST_URI} ^/images/
+    RewriteRule .* - [L]
+
+    # Redirect all other requests to the public folder
     RewriteRule ^$ public/index.php [L]
     RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
 </IfModule>
